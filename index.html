@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>CV web</title>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script>
+        var a=[1,0,0,0,0];
+        
+        function change1(){
+            if(a[0]==1){
+                $("#iframe").toggleClass("slideUp1");
+                    setTimeout(function(){
+                        $("#iframe").toggleClass("slideDown1");
+                    },1500);
+                $("nav").toggleClass("navChange1");
+                $("#name").toggleClass("nameChange1");
+                $(".button_nav").toggleClass("menuChange1");
+            }else{
+                $("#iframe").toggleClass("slideUp2");
+                    setTimeout(function(){
+                        $("#iframe").toggleClass("slideDown1");
+                    },1500);
+            }
+        }
+        function change2(){
+            $("#iframe").toggleClass("slideUp2");
+                setTimeout(function(){
+                    $("#iframe").toggleClass("slideDown2");
+                },1500);
+            $("nav").toggleClass("navChange2");
+            $("#name").toggleClass("nameChange2");
+            $(".button_nav").toggleClass("menuChange2");
+        }
+        $(document).ready(function(){
+            $("#btcss").click(function(){
+                $("#btcss").css({"color":"rgba(0, 145, 255, 0.559)","background":"#e4e4e4","border":"rgba(0, 145, 255, 0.559) solid 1px"});
+                $("#iframe").attr("src","css.text");
+                $("#bthtml").css({"color":"#ffffffff","background":"rgba(255, 47, 0, 0.612)","border":"#ffffffff solid 1px"});
+            })
+            $("#bthtml").click(function(){
+                $("#btcss").css({"color":"#ffffffff","background":"rgba(0, 145, 255, 0.559)","border":"#ffffffff solid 1px"});
+                $("#iframe").attr("src","html.text");
+                $("#bthtml").css({"color":"rgba(255, 47, 0, 0.612)","background":"#e4e4e4","border":"rgba(255, 47, 0, 0.612) solid 1px"});
+            })
+        })
+        //
+    </script>
+</head>
+<body>
+    <nav>
+        <div id="nav_name">
+            <a href="">
+                <h1 id="name">Team 6</h1>
+            </a>
+        </div>
+        <div id="nav_menu">
+            <button class="button_nav" id="bthome" type="button"><i class="fab fa-home fa"></i> Home</button>
+            <button class="button_nav" id="btabout" type="button"><i class="fab fa-address-card fa"></i> About us</button>
+            <button class="button_nav" id="btour" type="button"><i class="fab fa-folder-open fa"></i> Our technology</button>
+            <button class="button_nav" id="btsource" type="button"><i class="fab fa-file-code fa"></i> Source code</button>
+            <button class="button_nav" id="btcontact" type="button"><i class="fab fa-phone fa"></i> Contact</button>
+        </div>
+    </nav>
+    <!--  -->
+    <iframe id="iframe" src="home.html" frameborder="0" ></iframe>
+    <!--  -->
+    <div id="bot">
+        <div id="btop">
+            <div class="b_content" id="left">
+                <div class="Btitle">
+                    <h3>Về trang web</h3>
+                </div>
+                <div class="content">
+                    <div id="cleft">
+                        <ul type="none">
+                            <li><a href="">Home</a> </li>
+                            <li><a href="">About Us</a></li>
+                            <li><a href=""> Our Technology</a> </li>
+                            <li><a href=""> Source Code</a></li>
+                            <li><a href=""> Contact</a></li>
+                        </ul>
+                    </div>
+                    <h5>Trang web là bài báo cáo cuối kỳ của học phần Xây dựng ứng dụng web
+                        <br>
+                        <br>
+                        Trang web giới thiệu về thông tin của các thành viên trong nhóm 
+                        cũng như các ngôn ngữ xử dụng để xây dựng trang web...
+                    </h5>
+                </div>
+            </div>
+            <div class="b_content" id="mid">
+                <div class="Btitle">
+                    <h3>Về môn học</h3>
+                </div>
+                <div class="content">
+                    <h6>Tổng quan</h6>
+                    <p>Học phần này trang bị cho sinh viên các kiến thức cơ bản về ngôn ngữ HTML, JavaScript, CSS, jQuery; 
+                        cách lập trình xử lý trang web động phía trình duyệt (client) và cách sử dụng phần mềm thiết kế web Dreamweaver.
+
+                        Các kiến thức trên giúp cho sinh viên có thể thiết kế được ứng dụng web ở mức cơ bản và 
+                        là nền tảng để học tốt các môn học lập trình web sau này, đồng thời trang bị cho sinh viên kiến thức và kỹ năng cần thiết để có thể làm đồ án môn học, khóa luận tốt nghiệp và ứng dụng trong thực tế sau khi ra trường.</p>
+                    <p>Giảng viên giảng dạy: Vũ Văn Quang</p>
+                    <p></p>
+                </div>
+            </div>
+            <div class="b_content" id="right">
+                <div class="Btitle">
+                    <h3>liên hệ</h3>
+                </div>
+                <div class="content">
+                    <h6>Thông tin liên hệ các thành viên thành viên</h6>
+                    <p>Trần Công Danh Email: 20010760@st.phenikaa-uni.edu.vn <br>SDT: 0372614568</p>
+                    <p>Dương Văn Quang Email: 20010793@st.phenikaa-uni.edu.vn <br>SDT: 0378146640</p>
+                    <p>Hoàng Thị Hà Email: 20010893@st.phenikaa-uni.edu.vn <br>SDT: 0978373149</p>
+                </div>
+            </div>
+        </div>
+        <div id="bbot">
+
+        </div>
+    </div>
+    
+    <script>
+        const about = document.querySelector('#btabout');
+        const nav=document.querySelector('nav');
+        const name=document.querySelector('#name');
+        const iframe = document.querySelector('#iframe');
+        const home=document.querySelector('#bthome');
+        const our=document.querySelector('#btour');
+        const source=document.querySelector('#btsource')
+        const contact=document.querySelector('#btcontact');
+        const nav_bt=document.querySelectorAll('.button_nav');
+
+        about.addEventListener('click', performAnimation=() => {
+            nav.style.backgroundColor ='#ffffffff';
+            name.style.color='black'
+            nav.style.position='unset'
+            iframe.style.height ='70vh'
+            document.getElementById("iframe").src = 'about.html'
+            var i;
+            for(i=0;i<nav_bt.length;i++){
+                nav_bt[i].style.color='#ffffffff';
+            }
+            
+        })
+        //
+        home.addEventListener('click', performAnimation=() => {
+            nav.style.backgroundColor ='rgba(0,0,0,0.4)';
+            name.style.color='#ffffffff'
+            nav.style.position='fixed'
+            iframe.style.height ='100vh'
+            document.getElementById("iframe").src = 'home.html'
+            var i;
+            for(i=0;i<nav_bt.length;i++){
+                nav_bt[i].style.color='#0D0126';
+            }
+        })
+        //
+        our.addEventListener('click', performAnimation=() => {
+            nav.style.backgroundColor ='#ffffffff';
+            name.style.color='black'
+            nav.style.position='unset'
+            iframe.style.height ='90vh'
+
+            document.getElementById("iframe").src = 'tech.html'
+            var i;
+            for(i=0;i<nav_bt.length;i++){
+                nav_bt[i].style.color='#ffffffff';
+            }
+            
+        })
+        //
+        source.addEventListener('click', performAnimation=() => {
+            nav.style.backgroundColor ='#ffffffff';
+            name.style.color='black'
+            nav.style.position='unset'
+            iframe.style.height ='100vh'
+
+            document.getElementById("iframe").src = 'source.html'
+            var i;
+            for(i=0;i<nav_bt.length;i++){
+                nav_bt[i].style.color='#ffffffff';
+            }
+            
+        })
+
+        //
+        contact.addEventListener('click', performAnimation=() => {
+            nav.style.backgroundColor ='#ffffffff';
+            name.style.color='black'
+            nav.style.position='unset'
+            iframe.style.height ='50vh'
+
+            document.getElementById("iframe").src = 'contact.html'
+            var i;
+            for(i=0;i<nav_bt.length;i++){
+                nav_bt[i].style.color='#ffffffff';
+            }
+            
+        })
+    </script>
+</body>
+</html>

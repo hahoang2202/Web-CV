@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team 6</title>
+    <link rel="stylesheet" href="main.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script>
+        //
+        //
+        $(document).ready(function(){
+            $("#nav_bt").hide(0);
+            $("#team").hide(0);
+            $("#html").show(0);
+            $("#css").hide(0);
+            $("#Img_bg2").hide(0);
+            $("#back").hide(0);
+            $("#go_top").hide(0)
+            $("#p1").css("background","aliceblue");
+            $("#bthtml").css({"color":"rgba(255, 47, 0, 0.612)","background":"#e4e4e4","border":"rgba(255, 47, 0, 0.612) solid 1px"});
+            $("#nav_bt").click(function(){
+                // $("#nav_bt").show(2)
+                // $("#name").show("slow")
+                $("#nav_bt").css("color","#ffffffff");
+                $("#nav_bt").hide(50);
+                $("#nav_bar").show(100);
+
+            })
+            //
+            $("#go_top").click(function(){
+                $("html, body").animate({
+                scrollTop:0
+            },0);
+            })
+            //
+            
+            $("#btcss").click(function(){
+                $("#btcss").css({"color":"rgba(0, 145, 255, 0.559)","background":"#e4e4e4","border":"rgba(0, 145, 255, 0.559) solid 1px"});
+                $("#iframe").attr("src","css.text");
+                $("#bthtml").css({"color":"#ffffffff","background":"rgba(255, 47, 0, 0.612)","border":"#ffffffff solid 1px"});
+            })
+            $("#bthtml").click(function(){
+                $("#btcss").css({"color":"#ffffffff","background":"rgba(0, 145, 255, 0.559)","border":"#ffffffff solid 1px"});
+                $("#iframe").attr("src","html.text");
+                $("#bthtml").css({"color":"rgba(255, 47, 0, 0.612)","background":"#e4e4e4","border":"rgba(255, 47, 0, 0.612) solid 1px"});
+            })
+        });
+        //
+        $(window).scroll(function(){
+            if($(this).scrollTop()>30){
+                $("#go_top").show(50);
+                $("#nav_bt").show(100);
+                // $("#name").hide(1)
+                $("#nav_bar").hide(50);
+            }else{
+                $("#go_top").hide(50);
+                $("#nav_bt").hide(50);
+                // $("#name").show(1)
+                $("#nav_bar").show(50);
+            }
+            if($(this).scrollTop()>450){
+                $("#team").show(1500);
+            }else{
+                $("#team").hide(1000);
+            }
+        });
+        //
+    </script>
+</head>
+<body>
+    <section id="home">
+        <button class="pagebt" id="next">></i></button>
+        <button class="pagebt" id="back">></i></button>
+        <div id="point_page">
+            <div class="pp" id="p1"></div>
+            <div class="pp" id="p2"></div>
+        </div>
+        <div class="img" id="Img_bg1">
+            <div class="content">
+                <div class="row">
+                    <h2>Welcome to our project</h2>
+                    <p>đây là web giới thiệu thông tin về các thành viên trong team</p>
+                </div>
+            </div>
+        </div>
+        <div class="img" id="Img_bg2">
+            <div class="row">
+                <h2>Welcome to our project</h2>
+                <p>đây là web giới thiệu thông tin về các thành viên trong team</p>
+            </div>
+        </div>
+    </section>
+    <button tupe="button" id="go_top" title="Về đầu trang">
+        <i class="fab fa-home fa"></i>
+    </button>
+    <button type="button" id="nav_bt">
+        <i class="fab fa-list fa"></i>
+    </button>
+    <nav id="nav_bar">
+        <!-- <button type="button" id="nav_bt">
+            <i class="fab fa-list fa"></i>
+        </button> -->
+        <div id="name">
+            <h1>Team 6</h1>
+        </div>
+        <div id="nav_menu">
+            <a href="#home">
+                <i class="fab fa-home fa" ></i><p>Home</p>
+            </a>
+            <a href="#About">
+                <i class="fab fa-address-card fa" ></i><p>About Us</p>
+            </a>
+            <a href="#lg">
+                <i class="fab fa-folder fa" ></i><p>Our Project Has</p>
+            </a>
+            <a href="#source">
+                <i class="fab fa-file-code fa" ></i><p>Source Code</p>
+            </a>
+            <a href="#Us_c">
+                <i class="fab fa-voicemail fa" ></i><p>Contact Us</p>
+            </a>
+        </div>
+    </nav>
+    <section id="About">
+        <div class="content">
+            <div class="title">
+                <h1>About Us</h1>
+            </div>
+            <div id="team">
+                <div class="member" id="m1">
+                    <div class="header">
+                        <div class="head_img">
+                            <img src="Images\Danh.jpg" class="avata" alt="">
+                        </div>
+                        <div class="card_id">
+                            <div class="s_info">
+                                <p>Họ và Tên: Trần Công Danh</p>
+                                <p>Ngày sinh:10/07/2002</p>
+                                <p>Mã sinh viên:20010760</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mid">
+                        <div>
+                            <p>Tính cách: khá trầm tính...</p>
+                            <p>Sở thích: Vẽ, đọc sách,truyện, tiểu thuyết, chơi game....</p>
+                            <p>Và hiện đang là sinh viên năm ba khoa công nghệ thông tin của trường đại học phenikaa!</p>
+                        </div>
+                    </div>
+                    <div class="bot">
+                        <div>
+                            <button class="link_info" title="truy cập vào Facebook">
+                                <a target="_blank" href="https://www.facebook.com/Benn.tran.02/">
+                                    <i class="fab fa-facebook"></i>  
+                                </a>
+                            </button>
+                            <button class="link_info" title="truy cập vào Github">
+                                <a target="_blank" href="https://github.com/ZanhhTrann/ZanhhTrann">
+                                    <i class="fab fa-github"></i>  
+                                </a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="member" id="m2">
+                    <div class="header">
+                        <div class="head_img">
+                            <img src="Images\Danh.jpg" class="avata" alt="">
+                        </div>
+                        <div class="card_id">
+                            <div class="s_info">
+                                <p>Họ và Tên: Trần Công Danh</p>
+                                <p>Ngày sinh:10/07/2002</p>
+                                <p>Mã sinh viên:20010760</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mid">
+                        <div>
+                            <p>Tính cách: khá trầm tính...</p>
+                            <p>Sở thích: Vẽ, đọc sách,truyện, tiểu thuyết, chơi game....</p>
+                            <p>Và hiện đang là sinh viên năm ba khoa công nghệ thông tin của trường đại học phenikaa!</p>
+                        </div>
+                    </div>
+                    <div class="bot">
+                        <div>
+                            <button class="link_info" title="truy cập vào Facebook">
+                                <a target="_blank" href="https://www.facebook.com/Benn.tran.02/">
+                                    <i class="fab fa-facebook"></i>  
+                                </a>
+                            </button>
+                            <button class="link_info" title="truy cập vào Github">
+                                <a target="_blank" href="https://github.com/ZanhhTrann/ZanhhTrann">
+                                    <i class="fab fa-github"></i>  
+                                </a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="member" id="m3">
+                    <div class="header">
+                        <div class="head_img">
+                            <img src="Images\Danh.jpg" class="avata" alt="">
+                        </div>
+                        <div class="card_id">
+                            <div class="s_info">
+                                <p>Họ và Tên: Trần Công Danh</p>
+                                <p>Ngày sinh:10/07/2002</p>
+                                <p>Mã sinh viên:20010760</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mid">
+                        <div>
+                            <p>Tính cách: khá trầm tính...</p>
+                            <p>Sở thích: Vẽ, đọc sách,truyện, tiểu thuyết, chơi game....</p>
+                            <p>Và hiện đang là sinh viên năm ba khoa công nghệ thông tin của trường đại học phenikaa!</p>
+                        </div>
+                    </div>
+                    <div class="bot">
+                        <div>
+                            <button class="link_info" title="truy cập vào Facebook">
+                                <a target="_blank" href="https://www.facebook.com/Benn.tran.02/">
+                                    <i class="fab fa-facebook"></i>  
+                                </a>
+                            </button>
+                            <button class="link_info" title="truy cập vào Github">
+                                <a target="_blank" href="https://github.com/ZanhhTrann/ZanhhTrann">
+                                    <i class="fab fa-github"></i>  
+                                </a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="has">
+        <div>
+            <div class="title">
+                <h1>Our Project Has</h1>
+            </div>
+            <div id="lg">
+                <div>
+                    <i class="fab fa-html5 fa-7x" ></i>
+                    <i class="fab fa-css3 fa-7x"></i>
+                    <i class="fab fa-node-js fa-7x"></i>
+                    <!-- <i class="fab fa-script"></i> -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="source">
+        <div class="content">
+            <div class="title">
+                <h1>Source Code</h1>
+            </div>
+            <div id="source_code">
+                <div id="source_bt">
+                    <button class="sbt" id="bthtml"> HTML</button>
+                    <button class="sbt" id="btcss"> CSS</button>
+                    <button class="sbt" id="btgid"><a href="">Github</a></button>
+                </div>
+                <div>
+                    <iframe src="html.text" frameborder="1" class="sc" id="iframe"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="Us_c">
+        <div>
+            <div class="title">
+                <h1>Contact Us</h1>
+            </div>
+            <div id="contact" action="">
+                <form>
+                    <div id="email">
+                        <p>Nhập địa chỉ email</p>
+                        <input class="mes" type="text" id="email_address" required placeholder="name@example.com">
+                    </div>
+                    <div id="e_mes">
+                        <p>Nhập nội dung email</p>
+                        <textarea class="mes" id="mess" required
+                            placeholder="Để lại lời nhắn của bạn tại đây" rows="3"></textarea>
+                    </div>
+                    <div id="ebt">
+                        <button type="submit" id="btsub">Gửi</button>
+                    </div>
+                </form>
+                <div id="or">
+                    <h2>Or</h2>
+                </div>
+                <div id="mail_mem">
+                    <i class="fab fa-mail-bulk fa" ></i>
+                    <h3 title="Trần Công Danh">20010760@st.phenikaa-uni.edu.vn</h3>
+                    <h3 title="Dương Văn Quang">20010793@st.phenikaa-uni.edu.vn</h3>
+                    <h3 title="Hoàng Thị Hà">20010893@st.phenikaa-uni.edu.vn</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div id="bott">
+        <h3>Cảm ơn đã ghé qua web của chúng tôi 💕</h3>
+        <div class="b" id="b_t"></div>
+        <div class="b" id="b_b"></div>
+    </div>
+    <script>
+        const next = document.querySelector('#next')
+        const back = document.querySelector('#back')
+        const p1 = document.querySelector('#p1')
+        const p2 = document.querySelector('#p2')
+        const bg1 = document.querySelector('#Img_bg1')
+        const bg2 = document.querySelector('#Img_bg2')
+        
+        next.addEventListener('click', performAnimation=() => {
+            // setTimeout(performAnimation,1000/60)
+            next.style.display='none'
+            back.style.display='block'
+            p1.style.background='none'
+            p2.style.background="aliceblue"
+            bg2.style.display = 'block'
+            bg1.style.display = 'none'
+
+        })
+        back.addEventListener('click', () => {
+            back.style.display='none'
+            next.style.display='block'
+            p2.style.background='none'
+            p1.style.background="aliceblue"
+            bg1.style.display = 'block'
+            bg2.style.display = 'none'
+        })
+        setInterval(function(){
+            setTimeout(()=>{
+                next.style.display='none'
+                back.style.display='block'
+                p1.style.background='none'
+                p2.style.background="aliceblue"
+                bg2.style.display = 'block'
+                bg1.style.display = 'none'
+            },0)
+            setTimeout(()=>{
+                back.style.display='none'
+                next.style.display='block'
+                p2.style.background='none'
+                p1.style.background="aliceblue"
+                bg1.style.display = 'block'
+                bg2.style.display = 'none'
+            },6000)
+        },12000)
+    </script>
+</body>
+</html>

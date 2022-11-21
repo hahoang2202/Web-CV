@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script>
+
+    </script>
+    <title>Document</title>
+    
+</head>
+<body>
+    <section id="home">
+        <button class="bt_home" id="next">></button>
+        <button class="bt_home" id="back">></button>
+        <!--  -->
+        <div class="point_page">
+            <button class="pp" id="p1"></button>
+            <button class="pp" id="p2"></button>
+                
+        </div>
+        <!--  -->
+        <div class="img" id="Img_bg1">
+            <div class="content">
+                <div class="row">
+                    <h2>Welcome to our project</h2>
+                    <p>Đây là web giới thiệu thông tin về các thành viên trong team</p>
+                </div>
+            </div>    
+        </div>
+        <div class="img" id="Img_bg2">
+            <div class="content">
+                <div class="row">
+                    <h2>Welcome to our project</h2>
+                    <p>đây là web giới thiệu thông tin về các thành viên trong team</p>
+                </div>
+            </div>    
+        </div>
+    </section>
+    <script>
+        const next = document.querySelector('#next')
+        const back = document.querySelector('#back')
+        const p1 = document.querySelector('#p1')
+        const p2 = document.querySelector('#p2')
+        const bg1 = document.querySelector('#Img_bg1')
+        const bg2 = document.querySelector('#Img_bg2')
+
+
+
+        next.addEventListener('click', performAnimation=() => {
+            // setTimeout(performAnimation,1000/60)
+            next.style.display='none';
+            back.style.display='block';
+            p1.style.background='none';
+            p2.style.background="aliceblue";
+            bg2.style.display = 'block';
+            bg1.style.display = 'none';
+            
+
+        })
+        p2.addEventListener('click', () => {
+            next.style.display='none';
+            back.style.display='block';
+            p1.style.background='none';
+            p2.style.background="aliceblue";
+            bg2.style.display = 'block';
+            bg1.style.display = 'none';
+            
+        })
+        back.addEventListener('click', () => {
+            back.style.display='none';
+            next.style.display='block';
+            p2.style.background='none';
+            p1.style.background="aliceblue";
+            bg1.style.display = 'block';
+            bg2.style.display = 'none';
+            
+        })
+        p1.addEventListener('click', () => {
+            back.style.display='none';
+            next.style.display='block';
+            p2.style.background='none';
+            p1.style.background="aliceblue";
+            bg1.style.display = 'block';
+            bg2.style.display = 'none';
+            $("#Img_bg1").toggleClass('run');
+            
+        })
+        // $("#Img_bg1").toggleClass('run');
+        
+        
+    </script>
+</body>
+</html>

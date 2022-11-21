@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#bthtml").css({"color":"rgba(255, 47, 0, 0.612)","background":"#e4e4e4","border":"rgba(255, 47, 0, 0.612) solid 1px"});
+            $("#btcss").click(function(){
+                $("#btcss").css({"color":"rgba(0, 145, 255, 0.559)","background":"#e4e4e4","border":"rgba(0, 145, 255, 0.559) solid 1px"});
+                $("#Siframe").attr("src","css.text");
+                $("#bthtml").css({"color":"#ffffffff","background":"rgba(255, 47, 0, 0.612)","border":"#ffffffff solid 1px"});
+            })
+            $("#bthtml").click(function(){
+                $("#btcss").css({"color":"#ffffffff","background":"rgba(0, 145, 255, 0.559)","border":"#ffffffff solid 1px"});
+                $("#Siframe").attr("src","html.text");
+                $("#bthtml").css({"color":"rgba(255, 47, 0, 0.612)","background":"#e4e4e4","border":"rgba(255, 47, 0, 0.612) solid 1px"});
+            })
+        })
+    </script>
+</head>
+<body>
+    <section id="source">
+        <div class="content">
+            <div class="title">
+                <h1>Source Code</h1>
+            </div>
+            <div id="source_code">
+                <div id="source_bt">
+                    <button class="sbt" id="bthtml"> HTML</button>
+                    <button class="sbt" id="btcss"> CSS</button>
+                    <button class="sbt" id="btgid"><a href="">Github</a></button>
+                </div>
+                <div>
+                    <iframe src="html.text" frameborder="1" class="sc" id="Siframe"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        const bthtml=document.querySelector('#bthtml');
+        const btcss=document.querySelector('#btcss');
+        const iframe=document.querySelector('#Siframe');
+        
+    </script>
+</body>
+</html>

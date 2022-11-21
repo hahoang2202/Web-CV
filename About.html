@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script>
+    </script>
+</head>
+
+<body>
+    <section id="Au">
+        <div class="point_page">
+            <button class="pp" id="ap1"></button>
+            <button class="pp" id="ap2"></button>
+            <button class="pp" id="ap3"></button>
+        </div>
+
+        <div class="title">
+            <h1>About Us</h1>
+        </div>
+        <div id="team">
+            <div class="member" id="m1">
+                <div class="header">
+                    <div class="head_img">
+                        <img src="Images\Danh.jpg" class="avata" alt="">
+                    </div>
+
+                    <div class="card_id">
+                        <div class="s_info">
+                            <p>Họ và Tên: Trần Công Danh</p>
+                            <p>Ngày sinh: 10/07/2002</p>
+                            <p>Mã sinh viên: 20010760</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mid">
+                    <div>
+                        <p>Tính cách: khá trầm tính...</p>
+                        <p>Sở thích: Vẽ, đọc sách,truyện, tiểu thuyết, chơi game....</p>
+                        <p>Là sinh viên xuất sắc khi đạt điểm tuyệt đối môn Vật Lý Đại Cương.<br>
+                            Hiện đang là sinh viên năm ba Khoa Công nghệ thông tin của Trường Đại học Phenikaa!</p>
+                    </div>
+                </div>
+
+                <div class="bot">
+                    <div>
+                        <button class="link_info" title="truy cập vào Facebook">
+                            <a target="_blank" href="https://www.facebook.com/Benn.tran.02/">
+                                <i class="fab fa-facebook"></i>  
+                            </a>
+                        </button>
+                        <button class="link_info" title="truy cập vào Github">
+                            <a target="_blank" href="https://github.com/ZanhhTrann/ZanhhTrann">
+                                <i class="fab fa-github"></i>  
+                            </a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="member" id="m2">
+                <div class="header">
+                    <div class="head_img">
+                        <img src="Images\Quang.jpg" class="avata" alt="">
+                    </div>
+                    <div class="card_id">
+                        <div class="s_info">
+                            <p>Họ và Tên: Dương Văn Quang</p>
+                            <p>Ngày sinh:11/10/2002</p>
+                            <p>Mã sinh viên:20010793</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mid">
+                    <div>
+                        <p>Tính cách: hướng nội khi đi ngủ...</p>
+                        <p>Sở thích:nghe nhạc, ăn uống, du lịch,...</p>
+                        <p>Từng đạt điểm A môn học Cấu trúc dữ liệu và giải thuật.<br>
+                            Hiện đang là sinh viên năm ba Khoa Công nghệ thông tin của Trường Đại học Phenikaa!</p>
+                    </div>
+                </div>
+                <div class="bot">
+                    <div>
+                        <button class="link_info" title="truy cập vào Facebook">
+                            <a target="_blank" href="https://www.facebook.com/supnos.quang">
+                                <i class="fab fa-facebook"></i>  
+                            </a>
+                        </button>
+                        <button class="link_info" title="truy cập vào Github">
+                            <a target="_blank" href="https://github.com/D-Quang">
+                                <i class="fab fa-github"></i>  
+                            </a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="member" id="m3">
+                <div class="header">
+                    <div class="head_img">
+                        <img src="Images\Hà.jpg" class="avata" alt="">
+                    </div>
+                    <div class="card_id">
+                        <div class="s_info">
+                            <p>Họ và Tên: Hoàng Thị Hà</p>
+                            <p>Ngày sinh: 16/12/2002</p>
+                            <p>Mã sinh viên: 20010893</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mid">
+                    <div>
+                        <p>Tính cách: Hướng ngoại cả trong lẫn ngoài nhưng hướng nội part-time</p>
+                        <p>Sở thích: trọc người cả nghĩa bóng lẫn nghĩa đen ,chơi game....</p>
+                        <p>Hiện đang là sinh viên năm ba 
+                            Khoa Công nghệ thông tin của Trường Đại học Phenikaa!</p>
+                    </div>
+                </div>
+                <div class="bot">
+                    <div>
+                        <button class="link_info" title="truy cập vào Facebook">
+                            <a target="_blank" href="https://www.facebook.com/hae.1612">
+                                <i class="fab fa-facebook"></i>  
+                            </a>
+                        </button>
+                        <button class="link_info" title="truy cập vào Github">
+                            <a target="_blank" href="https://github.com/hahoang2202">
+                                <i class="fab fa-github"></i>  
+                            </a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        
+    </section>
+    <script>
+        const a1=document.querySelector('#ap1');
+        const a2=document.querySelector('#ap2');
+        const a3=document.querySelector('#ap3');
+        const m1=document.querySelector('#m1');
+        const m2=document.querySelector('#m2');
+        const m3=document.querySelector('#m3');
+        a1.addEventListener('click',()=>{
+            a1.style.background='aliceblue';
+            a2.style.background='none';
+            a3.style.background='none';
+            m1.style.display='block';
+            m2.style.display='none';
+            m3.style.display='none';
+            clearInterval(run);
+            run();
+        })
+        a2.addEventListener('click',()=>{
+            a1.style.background='none';
+            a2.style.background='aliceblue';
+            a3.style.background='none';
+            m1.style.display='none';
+            m2.style.display='block';
+            m3.style.display='none';
+            clearInterval(run);
+            run();
+            
+        })
+        a3.addEventListener('click',()=>{
+            a1.style.background='none';
+            a2.style.background='none';
+            a3.style.background='aliceblue';
+            m1.style.display='none';
+            m2.style.display='none';
+            m3.style.display='block';
+            clearInterval(run);
+            run();
+            
+        })
+        function run (){setInterval(function(){
+            setTimeout(()=>{
+                a1.style.background='none';
+                a2.style.background='aliceblue';
+                a3.style.background='none';
+                m1.style.display='none';
+                m2.style.display='inline';
+                m3.style.display='none';
+            },0);
+            setTimeout(()=>{
+                a1.style.background='none';
+                a2.style.background='none';
+                a3.style.background='aliceblue';
+                m1.style.display='none';
+                m2.style.display='none';
+                m3.style.display='inline';
+            },5000);
+            setTimeout(()=>{
+                a1.style.background='aliceblue';
+                a2.style.background='none';
+                a3.style.background='none';
+                m1.style.display='inline';
+                m2.style.display='none';
+                m3.style.display='none';
+            },10000);
+        },15000)}
+        run()
+        $('#ap1').click(function(){
+            $( ".member" ).toggleClass( ".run" );
+        })
+    </script>
+</body>
+</html>
